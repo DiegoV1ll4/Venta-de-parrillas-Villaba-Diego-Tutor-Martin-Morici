@@ -1,0 +1,54 @@
+
+@import "./variables";
+
+
+  .header {
+    width: 100%;
+    display: flex;
+    background-color:$black;
+    height: 130px;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+  
+    &__logo {
+      display: flex;
+      height: 150px;
+      width: 150px;
+    }
+  
+    &__nav {
+      font-size: 15px;
+      text-align: center;
+      display: flex;
+      align-content: center;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-end;
+    }
+  
+    &__lista {
+      flex-wrap: wrap;
+    }
+  
+    &__item {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      align-items: flex-start;
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
+  
+      a:hover {
+        border-radius: 30px;
+        color: $rojo;
+        transition: background-color .5s;
+  
+        a {
+          color: $naranja;
+          text-decoration: none;
+        }
+      }
+    }
+  }
